@@ -1,0 +1,39 @@
+[
+    {
+        "CategoryName":"Biryani/Rice",
+        "Name":"veg viryani",
+       
+        "option":
+        [{
+            "half":130,
+            "full":230
+         }
+        ],
+        "description":"made from rice"
+    },
+    {
+        "CategoryName":"Biryani/Rice",
+        "Name":"paneer viryani",
+        
+        "option":
+        [{
+            "half":130,
+            "full":230
+         }
+        ],
+        "description":"made from rice"
+    },
+    {
+        "CategoryName":"Biryani/Rice",
+        "Name":"Chicken Fried Rice",
+        
+        "option":
+        [{
+            "half":130,
+            "full":230
+         }
+        ],
+        "description":"made from rice"
+    }
+
+]
