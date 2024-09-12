@@ -14,7 +14,8 @@ import img2 from './CarouselImage/img2.jpeg';
 import img3 from './CarouselImage/img3.jpeg';
 // import SearchBar from './SearchBar';
 import Carousel from 'react-bootstrap/Carousel';
-import Form from 'react-bootstrap/form';
+import { Form } from 'react-bootstrap';
+
 
 
 
