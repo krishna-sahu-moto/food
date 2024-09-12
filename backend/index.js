@@ -31,6 +31,7 @@ app.listen(port, () => {
 })
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow your frontend's origin
+  // http://localhost:5174 
+  origin: 'https://food-frontend-1fg6.onrender.com', // Allow your frontend's origin
   credentials: true               // Allow credentials (cookies, authorization headers, etc.)
 }));
