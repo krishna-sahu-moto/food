@@ -38,7 +38,7 @@ app.listen(port, () => {
 // const cors = require('cors');
 
 const allowedOrigins = [
-  'http://localhost:5173',    // For local development
+  // 'http://localhost:5173',    // For local development
   'https://food-frontend-1fg6.onrender.com'  // Deployed frontend
 ];
 
