@@ -127,7 +127,7 @@ export default function MyOrder() {
         console.log(email);
         try {
             // http://localhost:5000/api/myOrderData
-            const res = await fetch(" https://food-backend-l0nx.onrender.com", {
+            const res = await fetch(" https://food-backend-l0nx.onrender.com/api/myOrderData", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
