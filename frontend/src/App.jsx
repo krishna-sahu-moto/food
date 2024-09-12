@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Signup from './components/screens/Signup';
 import Login from './components/screens/Login';
 import {CartProvider} from './components/ContextReducer';
-import MyOrder from './components/screens/Myorder';
+import MyOrder from './components/screens/MyOrder';
 
 
 
