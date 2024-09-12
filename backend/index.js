@@ -30,8 +30,26 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
+// app.use(cors({
+//   // http://localhost:5174 
+//   origin: 'https://food-frontend-1fg6.onrender.com', // Allow your frontend's origin
+//   credentials: true               // Allow credentials (cookies, authorization headers, etc.)
+// }));
+// const cors = require('cors');
+
+const allowedOrigins = [
+  'http://localhost:5173',    // For local development
+  'https://food-frontend-1fg6.onrender.com'  // Deployed frontend
+];
+
 app.use(cors({
-  // http://localhost:5174 
-  origin: 'https://food-frontend-1fg6.onrender.com', // Allow your frontend's origin
-  credentials: true               // Allow credentials (cookies, authorization headers, etc.)
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true // Allow credentials (cookies, headers, etc.)
 }));
+
