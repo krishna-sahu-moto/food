@@ -6,7 +6,8 @@ export default function Singup() {
   const [credentials, setcredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/createuser", {
+    // http://localhost:5000/api/createuser
+    const response = await fetch("https://food-backend-l0nx.onrender.com", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
