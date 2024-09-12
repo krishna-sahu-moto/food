@@ -126,7 +126,8 @@ export default function MyOrder() {
         const email = localStorage.getItem('userEmail');
         console.log(email);
         try {
-            const res = await fetch("http://localhost:5000/api/myOrderData", {
+            // http://localhost:5000/api/myOrderData
+            const res = await fetch(" https://food-backend-l0nx.onrender.com", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
