@@ -14,7 +14,7 @@ import img2 from './CarouselImage/img2.jpeg';
 import img3 from './CarouselImage/img3.jpeg';
 // import SearchBar from './SearchBar';
 import Carousel from 'react-bootstrap/Carousel';
-import form from 'react-bootstrap/form';
+import Form from 'react-bootstrap/form';
 
 
 
@@ -61,7 +61,7 @@ export default function Home() {
           <img style={{ height: "500px" }} className="d-block  w-100" src={img1} alt="First-Slide" />
           <Carousel.Caption >
           <div className="d-flex justify-content-center">
-        <form.Control
+        <Form.Control
           type="search"
           placeholder="Search"
           className="me-2"
@@ -80,7 +80,7 @@ export default function Home() {
           <img style={{ height: "500px", width: "100%" }} src={img2} alt="Second Slide" />
           <Carousel.Caption >
           <div className="d-flex justify-content-center">
-        <form.Control
+        <Form.Control
           type="search"
           placeholder="Search"
           className="me-2"
@@ -101,7 +101,7 @@ export default function Home() {
           <img style={{ height: "500px", width: "100%" }} src={img3} alt="Third -Slide" />
           <Carousel.Caption  >
           <div className="d-flex justify-content-center">
-        <form.Control
+        <Form.Control
           type="search"
           placeholder="Search"
           className="me-2"
