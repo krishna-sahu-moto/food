@@ -29,7 +29,7 @@ export default function Home() {
   const loadData = async () => {
     
 // http://localhost:5000/api/foodData
-    let response = await fetch("https://food-backend-l0nx.onrender.com", {
+    let response = await fetch("https://food-backend-l0nx.onrender.com/api/foodData", {
       
       method: "POST",
       headers: {
