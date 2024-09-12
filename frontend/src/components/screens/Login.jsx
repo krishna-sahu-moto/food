@@ -8,7 +8,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
     e.preventDefault();
       // http://localhost:5000/api/LoginUser
-    const response = await fetch(" https://food-backend-l0nx.onrender.com", {
+    const response = await fetch(" https://food-backend-l0nx.onrender.com/api/LoginUser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
